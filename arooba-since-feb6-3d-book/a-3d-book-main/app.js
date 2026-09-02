@@ -1,11 +1,11 @@
 /**
- * 💕 Our Story Since February 6th — Arooba's 3D Keepsake Book Engine
+ * 💕 Happy Birthday Arooba — Our Journey Since February 6th — 3D Keepsake Book Engine
  * Complete 3D Experience: Closed Book ➔ Open Spread ➔ 12 Page Turns ➔ Full 3D Close & Finale
  */
 (function () {
   'use strict';
 
-  // ─── 1. Our Story Data — Starting February 6th, the day we got engaged ──
+  // ─── 1. Our Story Data — Birthday Wishes & Our Journey Since Feb 6 ──────
   const DEFAULT_REASONS = [
     {
       text: "February 6th — the day you said yes, and my whole life changed forever. That moment is engraved in my heart for eternity.",
@@ -13,26 +13,35 @@
       emoji: "💍", icon: "heart",
       polaroidCaption: "The day you became my fiancée",
       quote: "On February 6th, you didn't just say yes to me — you said yes to forever.",
-      chapter: "Chapter I ✦ February 6th, Our Beginning",
+      chapter: "Chapter I ✦ February 6th, Where It All Began",
       theme: "rose"
     },
     {
-      text: "The first days after our engagement, when I'd catch myself smiling for no reason, just thinking that you're mine now.",
-      secretNote: "I couldn't stop looking at my phone, waiting for your texts, replaying our engagement day over and over. You turned an ordinary life into a love story.",
+      text: "From that day on, every step forward has been part of a journey I never want to end — one milestone, one memory, one 'us' at a time.",
+      secretNote: "I couldn't stop looking at my phone, waiting for your texts, replaying our engagement day over and over. You turned an ordinary life into a love story that keeps writing itself.",
       emoji: "✨", icon: "sparkle",
-      polaroidCaption: "Still smiling about February 6th",
-      quote: "Since that day, every ordinary moment feels like a celebration.",
-      chapter: "Chapter II ✦ The First Days of Us",
+      polaroidCaption: "Our journey, moving forward together",
+      quote: "Since that day, every ordinary moment feels like a new chapter of us.",
+      chapter: "Chapter II ✦ The Journey Begins",
       theme: "navy"
+    },
+    {
+      text: "Happy Birthday, my Arooba. Today the whole world should celebrate the day someone as wonderful as you was born.",
+      secretNote: "Every year that passes makes me fall for you more. Watching you grow into the beautiful soul you are is my greatest joy — and my favourite part of our journey.",
+      emoji: "🎂", icon: "star",
+      polaroidCaption: "The day my favourite person was born",
+      quote: "Today is a celebration of the best thing that ever happened to me — you.",
+      chapter: "Chapter III ✦ A Birthday Wish From My Heart",
+      theme: "blush"
     },
     {
       text: "The way you laugh at your own jokes before you even finish telling them.",
       secretNote: "Every time your laugh fills the room, my whole world lights up. Your joy is my favourite melody in the universe.",
-      emoji: "😂", icon: "star",
+      emoji: "😂", icon: "sparkle",
       polaroidCaption: "The sound of your pure joy",
       quote: "In all the world, there is no heart for me like yours.",
-      chapter: "Chapter III ✦ Pure Sunshine",
-      theme: "blush"
+      chapter: "Chapter IV ✦ Pure Sunshine",
+      theme: "peach"
     },
     {
       text: "How you make silence feel like the most comfortable place in the world.",
@@ -40,8 +49,8 @@
       emoji: "🌙", icon: "moon",
       polaroidCaption: "A quiet, peaceful sanctuary",
       quote: "Silence with you is sweeter than any song.",
-      chapter: "Chapter IV ✦ Gentle Peace",
-      theme: "peach"
+      chapter: "Chapter V ✦ Gentle Peace",
+      theme: "lavender"
     },
     {
       text: "How deeply and fiercely you care about the people in your life — it's one of the things I fell for since day one.",
@@ -49,7 +58,7 @@
       emoji: "💖", icon: "flower",
       polaroidCaption: "Your fierce and gentle kindness",
       quote: "You love with an open and boundless heart.",
-      chapter: "Chapter V ✦ Endless Grace",
+      chapter: "Chapter VI ✦ Endless Grace",
       theme: "rose"
     },
     {
@@ -58,7 +67,7 @@
       emoji: "🌿", icon: "leaf",
       polaroidCaption: "Standing strong together, since Feb 6",
       quote: "In you, I found my greatest strength.",
-      chapter: "Chapter VI ✦ Unwavering Hope",
+      chapter: "Chapter VII ✦ Unwavering Hope",
       theme: "navy"
     },
     {
@@ -67,7 +76,7 @@
       emoji: "🌸", icon: "flower",
       polaroidCaption: "Ordinary magic in every little moment",
       quote: "You make the simplest days unforgettable.",
-      chapter: "Chapter VII ✦ Blooming Wonder",
+      chapter: "Chapter VIII ✦ Blooming Wonder",
       theme: "blush"
     },
     {
@@ -76,7 +85,7 @@
       emoji: "☀️", icon: "sun",
       polaroidCaption: "A morning sunshine melody",
       quote: "Waking up to you is my favourite miracle.",
-      chapter: "Chapter VIII ✦ Morning Light",
+      chapter: "Chapter IX ✦ Morning Light",
       theme: "peach"
     },
     {
@@ -85,17 +94,8 @@
       emoji: "🕯️", icon: "candle",
       polaroidCaption: "The warmth of your embrace",
       quote: "You make every dark corner feel warm.",
-      chapter: "Chapter IX ✦ Glowing Flame",
+      chapter: "Chapter X ✦ Glowing Flame",
       theme: "rose"
-    },
-    {
-      text: "How you remember every tiny detail I've ever told you, from the day we got engaged till today.",
-      secretNote: "The way you listen with your whole heart makes me feel so cherished and understood. You never miss a thing.",
-      emoji: "🌟", icon: "star",
-      polaroidCaption: "Every tiny memory cherished",
-      quote: "You hold my story with such gentle care.",
-      chapter: "Chapter X ✦ Kept In Mind",
-      theme: "lavender"
     },
     {
       text: "The way you hold my hand like you never want to let go, just like you did the moment we got engaged.",
@@ -104,10 +104,10 @@
       polaroidCaption: "Fingers laced forever since Feb 6",
       quote: "Holding your hand is holding my whole world.",
       chapter: "Chapter XI ✦ Hand In Hand",
-      theme: "blush"
+      theme: "lavender"
     },
     {
-      text: "From February 6th to forever — being with you already feels like coming home, and soon it will be, forever, as my wife.",
+      text: "Happy Birthday, Arooba. From February 6th to forever — being with you already feels like coming home, and soon it will be, forever, as my wife.",
       secretNote: "No matter where we are in the world, as long as I'm with you, I am home. Happy birthday, my love, and happy anniversary to the day our story began. I love you with all my heart, forever and always.",
       emoji: "🏡", icon: "home",
       polaroidCaption: "Coming home to you",
@@ -585,319 +585,4 @@
       ang: Math.random() * Math.PI * 2, angSpd: (Math.random() - 0.5) * 0.026,
       flip: Math.random() * Math.PI * 2, flipSpd: 0.016 + Math.random() * 0.026,
       sway: Math.random() * Math.PI * 2, swaySpd: 0.012 + Math.random() * 0.016,
-      op: 0.4 + Math.random() * 0.4
-    };
-  }
-
-  function drawPetal(p) {
-    ambCtx.save();
-    ambCtx.translate(p.x, p.y); ambCtx.rotate(p.ang); ambCtx.scale(1, Math.cos(p.flip));
-    ambCtx.globalAlpha = p.op;
-    const g = ambCtx.createLinearGradient(-p.sz / 2, -p.sz / 2, p.sz / 2, p.sz / 2);
-    g.addColorStop(0, '#ff4081'); g.addColorStop(0.5, '#c2185b'); g.addColorStop(1, '#880e4f');
-    ambCtx.fillStyle = g;
-    ambCtx.beginPath();
-    ambCtx.moveTo(0, -p.sz * 0.8);
-    ambCtx.bezierCurveTo(p.sz * 0.7, -p.sz * 0.6, p.sz * 0.9, p.sz * 0.4, 0, p.sz * 0.8);
-    ambCtx.bezierCurveTo(-p.sz * 0.9, p.sz * 0.4, -p.sz * 0.7, -p.sz * 0.6, 0, -p.sz * 0.8);
-    ambCtx.fill(); ambCtx.restore();
-  }
-
-  function renderAmb() {
-    ambCtx.clearRect(0, 0, AW, AH);
-    for (const s of stars) {
-      s.a += s.spd;
-      const a = (Math.sin(s.a) + 1) * 0.5 * s.max;
-      ambCtx.beginPath(); ambCtx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-      ambCtx.fillStyle = `rgba(255,255,255,${a.toFixed(3)})`; ambCtx.fill();
-    }
-    for (const b of bokeh) {
-      b.y -= b.vy; b.phase += b.spd; b.x += Math.sin(b.phase) * b.amp;
-      if (b.y < -b.r * 2) { b.y = AH + b.r * 2; b.x = Math.random() * AW; }
-      ambCtx.beginPath(); ambCtx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
-      ambCtx.fillStyle = b.color; ambCtx.fill();
-    }
-    for (let i = 0; i < petals.length; i++) {
-      const p = petals[i];
-      p.y += p.vy; p.sway += p.swaySpd; p.x += Math.sin(p.sway) * p.vx;
-      p.ang += p.angSpd; p.flip += p.flipSpd;
-      if (p.y > AH + 40) { petals[i] = newPetal(true); }
-      drawPetal(p);
-    }
-    requestAnimationFrame(renderAmb);
-  }
-
-  // ─── 10. Cursor Sparkles ────────────────────────────────────────────
-  const curCvs = document.getElementById('cursor-canvas');
-  const curCtx = curCvs.getContext('2d');
-  let curPts = []; let curAF = null;
-  const CCLR = ['#ffd700', '#ff80ab', '#fff', '#f48fb1', '#e91e63'];
-
-  function resizeCur() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    curCvs.width = window.innerWidth * dpr; curCvs.height = window.innerHeight * dpr;
-    curCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-
-  window.addEventListener('pointermove', e => {
-    if (curPts.length > 60) return;
-    curPts.push({
-      x: e.clientX + (Math.random() * 8 - 4), y: e.clientY + (Math.random() * 8 - 4),
-      r: 1.4 + Math.random() * 2.8, color: CCLR[Math.floor(Math.random() * CCLR.length)],
-      alpha: 0.9, vx: (Math.random() - 0.5) * 1.3, vy: (Math.random() - 0.5) * 1.3 - 0.35,
-      decay: 0.026 + Math.random() * 0.016
-    });
-    if (!curAF) animateCur();
-  }, { passive: true });
-
-  function animateCur() {
-    curCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    for (let i = curPts.length - 1; i >= 0; i--) {
-      const p = curPts[i];
-      p.x += p.vx; p.y += p.vy; p.alpha -= p.decay;
-      if (p.alpha <= 0) { curPts.splice(i, 1); continue; }
-      curCtx.save(); curCtx.globalAlpha = p.alpha; curCtx.fillStyle = p.color;
-      curCtx.shadowColor = p.color; curCtx.shadowBlur = 5;
-      curCtx.beginPath(); curCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2); curCtx.fill(); curCtx.restore();
-    }
-    curAF = curPts.length ? requestAnimationFrame(animateCur) : null;
-    if (!curPts.length) curCtx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-  }
-
-  // ─── 11. Grand Finale Confetti ──────────────────────────────────────
-  const cfCvs = document.getElementById('confetti-canvas');
-  const cfCtx = cfCvs.getContext('2d');
-  let cfPts = []; let cfAF = null;
-  const CFCLR = ['#ff4d6d', '#ffd700', '#f8bbd0', '#c2185b', '#fff', '#e1bee7', '#ff85a1', '#ffb74d'];
-
-  function resizeCf() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    cfCvs.width = window.innerWidth * dpr; cfCvs.height = window.innerHeight * dpr;
-    cfCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  }
-
-  function launchConfetti() {
-    resizeCf(); cfPts = [];
-    const cW = window.innerWidth, cH = window.innerHeight;
-    for (let i = 0; i < 160; i++) {
-      cfPts.push({
-        x: Math.random() * cW, y: -20 - Math.random() * 80,
-        sz: 5 + Math.random() * 8, color: CFCLR[Math.floor(Math.random() * CFCLR.length)],
-        vx: (Math.random() - 0.5) * 5.2, vy: 2.3 + Math.random() * 4.8,
-        rot: Math.random() * Math.PI * 2, rotSpd: (Math.random() - 0.5) * 0.12,
-        shape: Math.random() > 0.35 ? 'rect' : 'heart', op: 1, life: 0,
-        maxLife: 220 + Math.random() * 80
-      });
-    }
-    if (cfAF) cancelAnimationFrame(cfAF);
-    animateCf();
-  }
-
-  function animateCf() {
-    const cW = window.innerWidth, cH = window.innerHeight;
-    cfCtx.clearRect(0, 0, cW, cH);
-    let alive = 0;
-    for (const p of cfPts) {
-      p.life++; p.x += p.vx; p.y += p.vy; p.rot += p.rotSpd; p.vx *= 0.99;
-      if (p.life > p.maxLife * 0.7) p.op = Math.max(0, 1 - (p.life - p.maxLife * 0.7) / (p.maxLife * 0.3));
-      if (p.op > 0 && p.y < cH + 50) {
-        alive++; cfCtx.save(); cfCtx.translate(p.x, p.y); cfCtx.rotate(p.rot);
-        cfCtx.globalAlpha = p.op; cfCtx.fillStyle = p.color;
-        if (p.shape === 'rect') {
-          cfCtx.fillRect(-p.sz / 2, -p.sz / 3, p.sz, p.sz * 0.62);
-        } else {
-          const s = p.sz * 0.58;
-          cfCtx.beginPath(); cfCtx.moveTo(0, -s / 2);
-          cfCtx.bezierCurveTo(-s, -s * 1.2, -s * 1.4, s * 0.4, 0, s * 1.2);
-          cfCtx.bezierCurveTo(s * 1.4, s * 0.4, s, -s * 1.2, 0, -s / 2);
-          cfCtx.fill();
-        }
-        cfCtx.restore();
-      }
-    }
-    cfAF = alive ? requestAnimationFrame(animateCf) : null;
-    if (!alive) cfCtx.clearRect(0, 0, cW, cH);
-  }
-
-  // ─── 12. Floating Hearts ────────────────────────────────────────────
-  const HEARTS = ['❤️', '💖', '💕', '✨', '🌹', '💗'];
-  function spawnHearts(x, y, count = 6) {
-    for (let i = 0; i < count; i++) {
-      const el = document.createElement('div'); el.className = 'heart-particle';
-      el.textContent = HEARTS[Math.floor(Math.random() * HEARTS.length)];
-      el.style.left = `${x + (Math.random() * 44 - 22)}px`;
-      el.style.top = `${y + (Math.random() * 30 - 15)}px`;
-      el.style.setProperty('--dx', (Math.random() * 150 - 75) + 'px');
-      el.style.setProperty('--dur', (1.6 + Math.random() * 0.65) + 's');
-      el.style.setProperty('--r0', (Math.random() * 28 - 14) + 'deg');
-      el.style.setProperty('--r1', (Math.random() * 38 - 19) + 'deg');
-      el.style.setProperty('--r2', (Math.random() * 55 - 27) + 'deg');
-      document.body.appendChild(el);
-      el.addEventListener('animationend', () => el.remove());
-    }
-  }
-
-  // ─── 13. Customizer Modal ───────────────────────────────────────────
-  function loadReasons() {
-    try {
-      const s = localStorage.getItem('ril_reasons');
-      if (s) {
-        const p = JSON.parse(s);
-        if (Array.isArray(p) && p.length && p[0].text) return p;
-      }
-    } catch (e) {}
-    return JSON.parse(JSON.stringify(DEFAULT_REASONS));
-  }
-
-  function openModal() { renderEditList(); custModal.classList.add('is-open'); }
-  function closeModal() { custModal.classList.remove('is-open'); }
-
-  function renderEditList() {
-    reasonsEditList.innerHTML = '';
-    reasons.forEach((r, i) => {
-      const div = document.createElement('div'); div.className = 'reason-edit-item';
-      div.innerHTML = `<span class="reason-edit-num">#${i + 1}</span><textarea class="reason-edit-input" data-i="${i}" aria-label="Wish ${i + 1}">${esc(r.text)}</textarea><button class="reason-del-btn" data-i="${i}" aria-label="Delete wish ${i + 1}">✕</button>`;
-      reasonsEditList.appendChild(div);
-    });
-    reasonsEditList.querySelectorAll('.reason-del-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
-        const idx = +e.currentTarget.getAttribute('data-i');
-        if (reasons.length <= 1) { alert('Need at least 1 wish!'); return; }
-        reasons.splice(idx, 1);
-        renderEditList();
-      });
-    });
-  }
-
-  function saveAndApply() {
-    const inputs = reasonsEditList.querySelectorAll('.reason-edit-input');
-    const updated = [];
-    inputs.forEach((ta, i) => {
-      const base = reasons[i] || DEFAULT_REASONS[i % DEFAULT_REASONS.length];
-      updated.push({ ...base, text: ta.value.trim() || base.text });
-    });
-    reasons = updated;
-    localStorage.setItem('ril_reasons', JSON.stringify(reasons));
-    if (cbCount) cbCount.textContent = `${reasons.length} Wishes`;
-    pageTotal.textContent = reasons.length;
-    closeModal();
-    createLeaves();
-    if (bookState === 'reading') {
-      if (currentPage >= reasons.length) currentPage = reasons.length - 1;
-      updateLeftPage(currentPage);
-      updateProgress();
-      updateNavButtons();
-    }
-  }
-
-  // ─── 14. Keyboard & Touch Controls ──────────────────────────────────
-  function initKeyboard() {
-    window.addEventListener('keydown', e => {
-      if (custModal.classList.contains('is-open')) {
-        if (e.key === 'Escape') closeModal();
-        return;
-      }
-      const sp = (e.code === 'Space' || e.key === ' ' || e.key === 'Spacebar');
-      if (sp) e.preventDefault();
-
-      if (sp || e.key === 'ArrowRight') {
-        e.preventDefault();
-        if (bookState === 'intro' || bookState === 'done') doOpenBook();
-        else if (bookState === 'reading') nextPage();
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        if (bookState === 'reading') prevPage();
-      } else if (e.key === 'Enter') {
-        e.preventDefault();
-        if (bookState === 'intro' || bookState === 'done') doOpenBook();
-        else if (bookState === 'reading' && currentPage >= reasons.length - 1) doCloseBook();
-      } else if (e.key === 'm' || e.key === 'M') {
-        soundEnabled = !soundEnabled;
-        if (soundEnabled) initAudio();
-        setSoundUI();
-      } else if (e.key === 'r' || e.key === 'R') {
-        if (bookState === 'done' || bookState === 'reading') restartBook();
-      }
-    });
-  }
-
-  let tx0 = 0, ty0 = 0;
-  function initTouch() {
-    document.addEventListener('touchstart', e => {
-      tx0 = e.changedTouches[0].clientX; ty0 = e.changedTouches[0].clientY;
-    }, { passive: true });
-    document.addEventListener('touchend', e => {
-      if (custModal.classList.contains('is-open')) return;
-      const dx = e.changedTouches[0].clientX - tx0, dy = e.changedTouches[0].clientY - ty0;
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
-        if (dx < 0) nextPage(); else prevPage();
-        if (navigator.vibrate) navigator.vibrate(22);
-      }
-    }, { passive: true });
-  }
-
-  // ─── 15. Event Listeners ────────────────────────────────────────────
-  function wireEvents() {
-    btnOpenBook .addEventListener('click', () => { btnOpenBook.blur(); doOpenBook(); });
-    closedBook  .addEventListener('click', e => { if (btnOpenBook.contains(e.target)) return; doOpenBook(); });
-    closedBook  .addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); doOpenBook(); } });
-
-    btnPrev     .addEventListener('click', () => { btnPrev.blur(); prevPage(); });
-    btnNext     .addEventListener('click', () => { btnNext.blur(); nextPage(); });
-    btnCloseBook.addEventListener('click', () => { btnCloseBook.blur(); doCloseBook(); });
-    btnReplay   .addEventListener('click', () => { btnReplay.blur(); restartBook(); });
-
-    btnSound    .addEventListener('click', () => {
-      btnSound.blur(); soundEnabled = !soundEnabled;
-      if (soundEnabled) initAudio();
-      setSoundUI();
-    });
-
-    btnCustomizer.addEventListener('click', () => { btnCustomizer.blur(); openModal(); });
-    modalClose   .addEventListener('click', closeModal);
-    custModal    .addEventListener('click', e => { if (e.target === custModal) closeModal(); });
-
-    btnAddReason.addEventListener('click', () => {
-      reasons.push({ ...DEFAULT_REASONS[reasons.length % DEFAULT_REASONS.length], text: 'The way you bring pure sunshine into my life, Arooba.' });
-      renderEditList();
-      reasonsEditList.scrollTop = reasonsEditList.scrollHeight;
-    });
-
-    btnReset.addEventListener('click', () => {
-      if (confirm('Reset all wishes to the defaults?')) {
-        reasons = JSON.parse(JSON.stringify(DEFAULT_REASONS));
-        renderEditList();
-      }
-    });
-
-    btnSave.addEventListener('click', saveAndApply);
-    window.addEventListener('resize', () => { resizeAmb(); resizeCur(); resizeCf(); });
-  }
-
-  // ─── 16. Initialization ─────────────────────────────────────────────
-  function init() {
-    if (cbCount) cbCount.textContent = `${reasons.length} Wishes`;
-    pageTotal.textContent = reasons.length;
-
-    // Default intro state
-    hide(openBookEl);
-    hide(progressSection);
-    hide(navControls);
-    hide(closeCta);
-    hide(finaleCta);
-
-    createLeaves();
-    setSoundUI();
-    initKeyboard();
-    initTouch();
-    wireEvents();
-
-    resizeAmb();
-    resizeCur();
-    renderAmb();
-  }
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-
-})();
+      op:
