@@ -15,6 +15,7 @@
   --gborder: rgba(255, 215, 0, 0.3);
   --font-t: 'Dancing Script', cursive;
   --font-s: 'Playfair Display', Georgia, serif;
+  --font-c: 'Cormorant Garamond', Georgia, serif;
   --font-n: 'Lato', sans-serif;
 
   /* Book Geometry — dynamically clamped for all screens */
@@ -91,6 +92,12 @@ body {
   0%, 100% { opacity: 0.85; }
   30%      { opacity: 1; transform: scale(1.03) translate(2px, -2px); }
   60%      { opacity: 0.72; transform: scale(0.98) translate(-1px, 1px); }
+}
+
+/* Soft cinematic vignette to frame the whole scene */
+.vignette-overlay {
+  position: fixed; inset: 0; pointer-events: none; z-index: 3;
+  background: radial-gradient(ellipse at 50% 45%, transparent 45%, rgba(2, 1, 6, 0.55) 100%);
 }
 
 /* Falling "I Love You Arooba" text rain — one drops, then another comes behind it */
@@ -171,6 +178,11 @@ body {
 }
 .sparkle-r { animation-delay: 1.25s; }
 
+.eyebrow-date {
+  font-family: var(--font-c); font-style: italic; font-size: 0.78rem;
+  color: var(--gold-dim); letter-spacing: 0.16em; margin-bottom: 0.15rem;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
 .main-title {
   font-family: var(--font-t); font-size: clamp(1.85rem, 4.8vw, 2.9rem); font-weight: 700;
   color: #fffdfa;
@@ -320,6 +332,25 @@ body {
   background: radial-gradient(ellipse at 50% 35%, rgba(255, 80, 120, 0.12) 0%, transparent 70%);
 }
 .cb-sparkles { font-size: 0.8rem; letter-spacing: 0.55rem; color: var(--gold); text-shadow: 0 0 8px var(--gold); animation: twinkle 2s infinite; }
+
+/* Gold wax-seal monogram */
+.cb-seal {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 35% 30%, #ffe98a 0%, #ffd700 38%, #b8860b 78%, #7a5900 100%);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.55), inset 0 1px 2px rgba(255,255,255,0.6), inset 0 -3px 5px rgba(0,0,0,0.35);
+  margin-bottom: 0.1rem;
+  animation: sealShine 3.5s infinite ease-in-out;
+}
+.cb-seal span {
+  font-family: var(--font-t); font-size: 1.35rem; font-weight: 700;
+  color: #4a1808; text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+@keyframes sealShine {
+  0%, 100% { filter: brightness(1); }
+  50%      { filter: brightness(1.18); }
+}
+
 .cb-title {
   font-family: var(--font-t); font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 700;
   color: var(--gold); text-align: center; line-height: 1.15;
@@ -498,8 +529,9 @@ body {
 .scene-moon { position: absolute; top: 16px; right: 18px; width: 24px; height: 24px; border-radius: 50%; background: #fff8e1; box-shadow: 0 0 14px #fff59d; }
 .scene-hills { position: absolute; bottom: 0; left: 0; right: 0; height: 38px; background: radial-gradient(ellipse at 50% 100%, #10051a 0%, #08020d 100%); border-radius: 50% 50% 0 0; }
 .polaroid-caption { font-family: var(--font-t); font-size: 1.05rem; font-weight: 700; color: #3e2723; text-align: center; margin-top: 7px; line-height: 1.2; }
-.left-quote { text-align: center; padding: 0 0.3rem; }
-.handwritten-note { font-family: var(--font-s); font-style: italic; font-size: 0.88rem; line-height: 1.48; color: var(--text); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); margin-bottom: 0.28rem; }
+.left-quote { text-align: center; padding: 0 0.3rem; display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
+.flourish { font-size: 1rem; color: var(--gold); opacity: 0.55; transform: scaleX(-1); }
+.handwritten-note { font-family: var(--font-s); font-style: italic; font-size: 0.88rem; line-height: 1.48; color: var(--text); text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); }
 .chapter-label { font-family: var(--font-n); font-size: 0.65rem; font-weight: 300; text-transform: uppercase; letter-spacing: 0.14em; color: var(--gold); }
 
 /* Center Spine Fold */
