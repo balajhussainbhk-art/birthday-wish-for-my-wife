@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#12081f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Happy Birthday Arooba 💖</title>
+  <meta name="description" content="A mobile-first birthday wish for Arooba with 12 heartfelt memories and wishes." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-orb orb-3" aria-hidden="true"></div>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle birthday music" aria-pressed="false">
+    <span class="music-icon">🎵</span>
+    <span class="music-text">Music Off</span>
+  </button>
+
+  <main class="mobile-app">
+    <section class="welcome-card">
+      <p class="mini-tag">A 2026 birthday surprise made with love</p>
+      <h1>Happy Birthday, <span>Arooba</span> ✨</h1>
+      <p class="intro-text">Same love, same memories, but in a brand new mobile design just for you. Swipe or tap next to read every page.</p>
+      <div class="meta-pills" aria-hidden="true">
+        <span>💖 12 Loving Wishes</span>
+        <span>📱 Mobile First</span>
+        <span>🎂 Birthday Special</span>
+      </div>
+    </section>
+
+    <section class="story-shell">
+      <div class="story-topbar">
+        <div class="progress-bars" id="progressBars"></div>
+        <p class="story-counter"><span id="currentNum">1</span> / <span id="totalNum">12</span></p>
+      </div>
+
+      <article class="story-card" id="storyCard">
+        <div class="card-glow"></div>
+        <p class="chapter" id="chapterText">Chapter I</p>
+        <h2 class="wish-badge" id="wishBadge">Wish #1</h2>
+
+        <div class="photo-wrap">
+          <img id="memoryImage" class="memory-image" src="" alt="A memory of Arooba" loading="eager" decoding="async" />
+          <p class="photo-caption" id="photoCaption">The day you became my fiancée</p>
+        </div>
+
+        <div class="quote-box">
+          <p id="quoteText">“A special quote.”</p>
+        </div>
+
+        <div class="main-message">
+          <p id="mainText"></p>
+        </div>
+
+        <button class="note-toggle" id="noteToggle" aria-expanded="false">Tap to read a secret note 💌</button>
+        <div class="secret-note" id="secretNoteBox" hidden>
+          <p id="secretNoteText"></p>
+        </div>
+      </article>
+
+      <div class="action-row">
+        <button class="nav-btn secondary" id="prevBtn" aria-label="Previous wish">← Prev</button>
+        <button class="nav-btn primary" id="nextBtn" aria-label="Next wish">Next →</button>
+      </div>
+
+      <p class="swipe-hint">Swipe left/right or use the buttons below 💕</p>
+    </section>
+
+    <section class="final-note" id="finalNote">
+      <h3>For My Arooba 💍</h3>
+      <p>I love you so much. From February 6th to forever, every memory with you feels like home. Happy Birthday, my love. May every year bring you more smiles, peace, and love. ❤️</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
