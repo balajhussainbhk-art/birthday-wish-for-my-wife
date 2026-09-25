@@ -825,6 +825,8 @@
         setSoundUI();
       } else if (e.key === 'r' || e.key === 'R') {
         if (bookState === 'done' || bookState === 'reading') restartBook();
+      } else if (e.key === 'e' || e.key === 'E') {
+        openModal();
       }
     });
   }
